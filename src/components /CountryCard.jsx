@@ -1,14 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Link} from "react-router-dom";
+import { device } from '../devices'
 
 const StyledCard = styled.div`
 width: 270px;
 height: 350px;
-margin: 0 50px 30px 0;
 background: ${props => props.theme.element};
 box-shadow: ${props => props.theme.boxShadow};
-border-radius: 5px;`
+border-radius: 5px;
+
+@media ${device.mobile} { 
+    margin-right: 30px;
+}`
 
 const StyledImageLayer = styled.div`
 height: 50%;`
