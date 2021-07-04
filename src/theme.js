@@ -16,6 +16,14 @@ export const dark = {
 
 export const GlobalStyles = createGlobalStyle`
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
 body{
     background: ${props => props.theme.background};
+    font-family: 'Nunito Sans', sans-serif;
 }`

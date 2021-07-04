@@ -5,7 +5,8 @@ import styled from 'styled-components'
 import { device } from '../devices'
 
 
-const StyledContainer = styled.div``
+const StyledContainer = styled.div`
+padding: 0 30px 30px 30px;`
 
 const StyledRow = styled.div`
 height: 100%`
@@ -18,7 +19,7 @@ margin: 50px 0;`
 
 const StyledBackButton = styled.button`
 border: none;
-padding: 5px 40px 5px 40px;
+padding: 5px 25px 5px 25px;
 background: ${props => props.theme.element};
 box-shadow:${props => props.theme.boxShadow};
 color: ${props => props.theme.font};`
@@ -64,7 +65,7 @@ const StyledBorderHeading = styled.p``
 
 const StyledBorderCountry = styled.button`
 text-decoration: none;
-padding: 5px 30px 5px 30px;
+padding: 5px 25px 5px 25px;
 margin: 10px 10px 0 0;
 border: none;
 box-shadow: ${props => props.theme.boxShadow};

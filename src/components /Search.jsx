@@ -1,7 +1,9 @@
 import React from 'react'
+import { device } from '../devices'
 import styled from 'styled-components'
 
 const StyledInput = styled.input`
+width: 100%;
 padding: 15px 30px 15px 30px;
 box-shadow: ${props => props.theme.boxShadow};
 border: none;

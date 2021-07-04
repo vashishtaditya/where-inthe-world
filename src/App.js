@@ -10,16 +10,21 @@ import Search from './components /Search';
 import RegionPicker from './components /RegionPicker';
 import CountryList from './components /CountryList';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 import CountryDetails from './components /CountryDetails';
 import styled, {ThemeProvider} from 'styled-components'
 import {light, dark, GlobalStyles} from './theme.js'
+import { device } from './devices'
 
 
 const StyledOptionsDiv = styled.div`
 display: flex;
-justify-content: space-between;
-margin-top: 50px`
+margin-top: 50px;
+flex-direction: column;
+
+@media ${device.mobile} { 
+  justify-content: space-between;
+  flex-direction: row;
+}`
 
 const App = () => {
 
