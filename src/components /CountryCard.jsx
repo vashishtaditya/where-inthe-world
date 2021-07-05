@@ -9,9 +9,11 @@ height: 350px;
 background: ${props => props.theme.element};
 box-shadow: ${props => props.theme.boxShadow};
 border-radius: 5px;
+margin-bottom: 40px;
 
 @media ${device.mobile} { 
-    margin-right: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
 }`
 
 const StyledImageLayer = styled.div`
